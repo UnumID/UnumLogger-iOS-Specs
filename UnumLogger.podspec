@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "UnumLogger"
-    s.version      = "1.0.1"
+    s.version      = "1.0.3"
     s.summary      = "The UnumID Logger SDK."
     s.description  = <<-DESC
     The UnumID Logger SDK.
@@ -17,5 +17,6 @@ Pod::Spec.new do |s|
     s.swift_version = "5.0"
     s.ios.deployment_target  = '13.0'
     s.dependency 'Zip', '~> 2.1'
+    s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 end
